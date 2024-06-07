@@ -15,20 +15,39 @@
             <h2>Laboratorio de Railway</h2>
             <p>Railway es una plataforma que facilita la implementación y el despliegue de aplicaciones web, permitiendo a los desarrolladores enfocarse en la creación de sus aplicaciones sin preocuparse por la infraestructura subyacente.</p>
         </section>
+        
+        <!-- Logo de Railway -->
+        <section class="logo">
+            <img src="https://railway.app/brand/logo-light.svg" alt="Logo de Railway" width="100">
+        </section>
+        
         <section class="technologies">
             <h2>Tecnologías Utilizadas</h2>
             <ul>
-                <li class="tooltip">Python
-                    <span class="tooltiptext">Python: Un lenguaje de programación popular y versátil.</span>
+                <li>
+                    <div class="technology-button" onclick="toggleTooltip(this)">Python</div>
+                    <div class="tooltiptext">Python: Un lenguaje de programación popular y versátil.</div>
                 </li>
-                <li class="tooltip">Flask
-                    <span class="tooltiptext">Flask: Un framework minimalista para servidores web en Python.</span>
+                <li>
+                    <div class="technology-button" onclick="toggleTooltip(this)">Flask</div>
+                    <div class="tooltiptext">Flask: Un framework minimalista para servidores web en Python.</div>
                 </li>
-                <li class="tooltip">Gunicorn
-                    <span class="tooltiptext">Gunicorn: Un servidor WSGI para aplicaciones web en Python.</span>
+                <li>
+                    <div class="technology-button" onclick="toggleTooltip(this)">Gunicorn</div>
+                    <div class="tooltiptext">Gunicorn: Un servidor WSGI para aplicaciones web en Python.</div>
                 </li>
             </ul>
         </section>
     </main>
+    <script>
+        function toggleTooltip(button) {
+            const tooltipText = button.nextElementSibling;
+            if (tooltipText.style.display === "none" || tooltipText.style.display === "") {
+                tooltipText.style.display = "block";
+            } else {
+                tooltipText.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -85,3 +85,57 @@ ul li {
     border-style: solid;
     border-color: #FFD700 transparent transparent transparent;
 }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .technology-button {
+            cursor: pointer;
+            border: 1px solid transparent;
+            padding: 10px;
+            display: block;
+            transition: border 0.3s ease;
+        }
+        .technology-button:hover {
+            border: 1px solid #000;
+        }
+        .tooltiptext {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .description, .logo {
+            margin-bottom: 20px;
+        }
+        .technologies ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .technologies li {
+            margin-bottom: 10px;
+        }
+        .technology-button {
+            cursor: pointer;
+            border: 1px solid transparent;
+            padding: 10px;
+            display: block;
+            transition: border 0.3s ease;
+        }
+        .technology-button:hover {
+            border: 1px solid #000;
+        }
+        .tooltiptext {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+        }
