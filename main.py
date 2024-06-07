@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    my_set = {"Hello World my name is Daniel"}
+    my_set = {"Hello World my name is Martín"}
     return jsonify(list(my_set))
 
 
